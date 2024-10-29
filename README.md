@@ -4,4 +4,4 @@
 Repository utilizes code from the **Homework 4 (CSS selectors)**
 
 Check put project page: 
-(Homework 5)[https://panisil.github.io/hillel-home-work-5/]
+[Homework 5](https://panisil.github.io/hillel-home-work-5/)
