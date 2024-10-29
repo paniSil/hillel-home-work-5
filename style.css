@@ -1,0 +1,142 @@
+/* Background test */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  z-index: -2;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: white;
+  background-image: url(images/bg_pattern.jpg);
+  background-repeat: repeat;
+  background-size: 200px;
+  background-attachment: scroll;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100vh;
+  opacity: 0.95;
+  background-color: white;
+}
+
+main {
+  width: 100%;
+  max-width: 960px;
+  align-self: center;
+  background-color: white;
+  padding: 20px;
+  border-color: grey;
+  border-width: 1px;
+  border-style: solid;
+  margin-top: 40px;
+}
+
+/* Selectors */
+div > p {
+  background-color: darkseagreen;
+}
+
+main > h2 {
+  background-color: cadetblue;
+}
+
+main > h2.secondary-title {
+  background-color: rgb(139, 72, 226);
+  font-size: small;
+  text-align: end;
+  padding: 20px;
+}
+
+.bold-text {
+  background-color: aquamarine;
+  font-weight: bold;
+}
+
+h1 {
+  background-color: salmon;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+.text-container .secondary-title {
+  background-color: darkorange;
+  text-align: end;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.text-container a + p {
+  background-color: hotpink;
+}
+
+div > #italic-text {
+  background-color: grey;
+  font-style: italic;
+}
+
+.text-container a ~ .bold-text {
+  background-color: lightpink;
+  font-weight: bold;
+}
+
+p + a {
+  background-color: cyan;
+}
+
+div a + a {
+  background-color: cornflowerblue;
+  text-decoration: none;
+}
+
+div a + a:hover {
+  background-color: dodgerblue;
+}
+
+div > p > span {
+  background-color: greenyellow;
+}
+
+a[href*=".com"] {
+  background-color: blueviolet;
+  color: aliceblue;
+}
+
+a[href*=".com"]:hover {
+  background-color: fuchsia;
+}
+
+a#not-very-important-link {
+  background-color: darkgoldenrod;
+}
+
+a#not-very-important-link:hover {
+  background-color: darkorange;
+}
+
+main > div #very-important-link {
+  background-color: tomato;
+  text-decoration: underline;
+  color: black;
+}
+
+main > div #very-important-link:hover {
+  background-color: brown;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Main</title>
+</head>
+
+<body>
+
+  <main>
+    <h1>Застосовується до тегів h1, вага 1</h1>
+    <h2>Застосовується до тегів h2, дочірніх до main, на першому рівні, вага 2</h2>
+    <a href="http://back.home.com">Застосовується до тега а, якщо в href є ".com, вага 11"</a>
+    <a href="http://back.home.ua">Лінк без ".com"</a>
+
+    <div class="text-container">
+      <p>
+        Застосовується до тегів p, дочірніх до div, на першому рівні, вага 2
+      </p>
+      <p class="bold-text">
+        Застосовується до класу bold-text, вага 10
+      </p>
+      <h2 class="secondary-title">Застосовується для класу secondary-title, вкладеного в клас text-container, вага 20
+      </h2>
+      <p id="italic-text">
+        Застосовується до id italic-text, дочірнього до div, вага 101
+      </p>
+      <a href="#">Застосовується до тегів а, які є наступними після тегу p, вага 2</a>
+      <p>
+        Застосовується до тегу p, наступному після тега а, якщо теги вкладені в text-container, вага 12
+      </p>
+      <p class="bold-text">Застосовується до всіх об'єктів класу bold-text, які слідують за тегом а та вкладені в
+        text-container, вага 21</p>
+      <p class="bold-text">Застосовується до всіх об'єктів класу bold-text, які слідують за тегом а та вкладені в
+        text-container, вага 21 </p>
+      <p class="bold-text">Застосовується до всіх об'єктів класу bold-text, які слідують за тегом а та вкладені в
+        text-container, вага 21</p>
+      <p>Застосовується до тегів p, дочірніх до div, на першому рівні, вага 2 <span>Застосовується до всіх span тегів,
+          дочірніх до p, які дочірні до div, які дочірні до main, вага 4</span></p>
+    </div>
+
+    <h2 class="secondary-title">Застосовується до тегів h2 класу secondary-title, дочірніх до main, на першому рівні,
+      вага 12
+    </h2>
+
+    <a href="#" id="not-very-important-link">id not-very-important-link з тегом а, вага 101</a>
+
+    <div>
+      <p>
+        Застосовується до тегів p, дочірніх до div, на першому рівні, вага 2</p>
+      <a href="#">Застосовується до тегів а, які є наступними після тегу p, вага 2</a>
+      <a href="#">Застосовується до тега а після тега а, вкладеного в div, вага 3</a>
+      <a href="http://back.home.com">Застосовується до тега а, якщо в href є ".com, вага 11"</a>
+      <a href="#">Застосовується до тега а після тега а, вкладеного в div, вага 3</a>
+      <a href="#" id="very-important-link">Застосовується до id very-important-link, вкладеного в div, вкладеного в
+        main, вага 102</a>
+      <a href="#">Застосовується до тега а після тега а, вкладеного в div, вага 3</a>
+    </div>
+
+  </main>
+</body>
+
+</html>
